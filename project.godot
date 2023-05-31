@@ -1,0 +1,45 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="MyFloorPlan.GD"
+config/description="A simple floor plan starter kit written in Godot"
+run/main_scene="res://Game/Main.tscn"
+config/features=PackedStringArray("4.1", "C#", "Mobile")
+config/icon="res://Assets/icon.svg"
+
+[dotnet]
+
+project/assembly_name="MyFloorPlan.GD"
+
+[editor]
+
+naming/scene_name_casing=1
+
+[filesystem]
+
+import/blender/enabled=false
+import/fbx/enabled=false
+
+[input_devices]
+
+buffering/agile_event_flushing=true
+pointing/emulate_touch_from_mouse=true
+
+[physics]
+
+2d/run_on_separate_thread=true
+3d/run_on_separate_thread=true
+
+[rendering]
+
+renderer/rendering_method="mobile"
+driver/threads/thread_model=2
